@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600;800&display=swap'); 
+
+html {
+  font-family: 'Kanit', sans-serif;
+  color: #1B7CAF;
+}
+
+.bodyApp {
+  background-color: rgb(184, 207, 208);
+  padding: 5%;
+}
+
+/* --- Podio --- */
+.zonaPodio {
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  margin: 5%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, minmax(125px, 300px));
+  justify-content: center;
+}
+
+.usuarioPodio {
+  background-color: rgba(160, 100, 40, .5);
+  border: 2px solid #BDDCF2;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+  border-radius: 15px;
+  text-align: center;
+  min-height: 200px;
+  height: 325px;
+}
+
+.avatarPodio {
+  width: 60%;
+}
+
+.nombrePodio {
+  font-weight: 600;
+}
+
+.apellidoPodio {
+  font-weight: 200;
+}
+
+/* --- Parrilla --- */
+.zonaParrilla {
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  margin: 5%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, minmax(125px, 400px));
+  justify-content: center;
+}
+
+.usuarioParrilla {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.avatarParrilla {
+  width: 60%;
+}
+
+.nombreParrilla {
+  font-weight: 600;
+}
+
+.apellidoParrilla {
+  font-weight: 200;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 800px) {
+  .zonaPodio {
+    grid-template-columns: 1fr;
+  }
+
+  .zonaParrilla {
+    grid-template-columns: 1fr;
+  }
+
+  .usuarioParrilla {
+    display: inline;
+    text-align: center;
+  }
+}
