@@ -63,7 +63,7 @@ body.contenedorGeneral {
   /* Rejilla interna del formulario */
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr repeat(3, 90px);
+  grid-template-columns: 1fr repeat(3, 120px);
 }
 
 .tituloAlumno, .tituloTiempo {
@@ -226,32 +226,11 @@ body.contenedorGeneral {
 
 /* --- Media Queries --- */
 @media (max-width: 800px) {
-  .contenedorGrid {
-    grid-template-columns: repeat(2, 230px);
-    grid-gap: 18px;
-  }
 
+  /* --- Formulario --- */
   .contenedorFormulario {
     grid-column: span 2;
   }
-
-  #usuarioPrimero {
-    grid-column: 1 / 3;
-  }
-
-  #usuarioSegundo {
-    grid-column: 1 / 2;
-  }
-  
-  #usuarioTercero {
-    grid-column: 2 / 3;
-  } 
-  
-  .usuarioParrilla{
-    grid-column: 1 / 3;
-  }
-
-
 
   .tituloAlumno {
     display: none;
@@ -272,6 +251,28 @@ body.contenedorGeneral {
   
   .campoMinutos{
     grid-column: span 1 ;
+  }
+
+  /* --- Podio & parilla --- */
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 230px);
+    grid-gap: 18px;
+  }
+
+  #usuarioPrimero {
+    grid-column: 1 / 3;
+  }
+
+  #usuarioSegundo {
+    grid-column: 1 / 2;
+  }
+  
+  #usuarioTercero {
+    grid-column: 2 / 3;
+  } 
+  
+  .usuarioParrilla{
+    grid-column: 1 / 3;
   }
 
 }
