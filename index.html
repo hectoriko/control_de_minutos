@@ -10,139 +10,163 @@
   
   <script type="text/javascript" src="./script.js"></script>
 </head>
-<body class="contenedorApp">
-  <div class="contenedorFormulario">
-    <form action="POST">
-      <table>
-        <tr>
-          <th><label for="name">Alumno</label></th>
-          <th><label for="name">Tiempo</label></th>
-        </tr>
+<body class="contenedorGeneral">
 
-        <tr>
-          <td><input type="text" name="name" id="name" placeholder="Nombre" required></td>
-          <td><button>5min</button></td>
-          <td><button>10min</button></td>
-          <td><button>15min</button></td>
-        </tr>
-        
-        <tr>
-          <td><input type="text" name="name" id="name" placeholder="Nombre" required></td>
-          <td>
-            <label class="container">5min
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-          </td>
-          <td>
-            <label class="container">10min
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-          </td>
-          <td>
-            <label class="container">15min
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-          </td>
-        </tr>
-        <tr>
-          <td><input type="text" name="name" id="name" placeholder="Nombre" required></td>
-          <td><input type="radio" value="none" name="rate" />5min</td>
-          <td><input type="radio" value="none" name="rate" />10min</td>
-          <td><input type="radio" value="none" name="rate" />15min</td>
-        </tr>
-      </table>
-    </form>
-  </div>
-
-  <div class="contenedorPodio">
+    <div class="contenedorGrid">
+      
+      <div class="contenedorFormulario">
+        <form action="POST">
+          <table>
+            <tr>
+              <th><label for="name">Alumno</label></th>
+              <th><label for="name">Tiempo</label></th>
+            </tr>
     
-    <!-- 1º más tiempo acumulado -->
-    <div class="usuarioPodio" id="usuarioPrimero">
-      <div class="contenedorAvatarPodio">
-        <img class="avatarPodio" src="./img/user.png" alt="imagen usuario">
+            <tr>
+              <td><input type="text" name="name" id="name" placeholder="Nombre" required></td>
+              <td><button>5min</button></td>
+              <td><button>10min</button></td>
+              <td><button>15min</button></td>
+            </tr>
+            
+            <tr>
+              <td><input type="text" name="name" id="name" placeholder="Nombre" required></td>
+              <td>
+                <label class="container">5min
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td>
+                <label class="container">10min
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td>
+                <label class="container">15min
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="text" name="name" id="name" placeholder="Nombre" required></td>
+              <td><input type="radio" value="none" name="rate" />5min</td>
+              <td><input type="radio" value="none" name="rate" />10min</td>
+              <td><input type="radio" value="none" name="rate" />15min</td>
+            </tr>
+          </table>
+        </form>
       </div>
-      <div class="contenedorDatosPodio">
-        <h2 class="nombrePodio">Nombre</h2>
-        <h3 class="apellidoPodio">Apellido</h3>
-        <p class="tiempoPodio">10min</p>
+
+      <!-- Podio -->
+      <!-- 1º más tiempo acumulado -->
+      <div class="usuarioPodio" id="usuarioPrimero">
+        <div class="contenedorAvatarPodio">
+          <img class="avatarPodio" src="./img/user.png" alt="imagen usuario">
+          <i class="fas fa-user-alt"></i>
+
+        </div>
+        <div class="contenedorDatosPodio">
+          <h2 class="nombrePodio">Nombre</h2>
+          <h3 class="apellidoPodio">Apellido</h3>
+          <p class="tiempoPodio">10min</p>
+        </div>
       </div>
-    </div>
-    
-    <!-- 2º más tiempo acumulado -->
-    <div class="usuarioPodio" id="usuarioSegundo">
-      <div class="contenedorAvatarPodio">
-        <img class="avatarPodio" src="./img/user.png" alt="imagen usuario">
+      
+      <!-- 2º más tiempo acumulado -->
+      <div class="usuarioPodio" id="usuarioSegundo">
+        <div class="contenedorAvatarPodio">
+          <img class="avatarPodio" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosPodio">
+          <h2 class="nombrePodio">Nombre</h2>
+          <h3 class="apellidoPodio">Apellido</h3>
+          <p class="tiempoPodio">10min</p>
+        </div>
       </div>
-      <div class="contenedorDatosPodio">
-        <h2 class="nombrePodio">Nombre</h2>
-        <h3 class="apellidoPodio">Apellido</h3>
-        <p class="tiempoPodio">10min</p>
+  
+      <!-- 3º más tiempo acumulado -->
+      <div class="usuarioPodio" id="usuarioTercero">
+        <div class="contenedorAvatarPodio">
+          <img class="avatarPodio" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosPodio">
+          <h2 class="nombrePodio">Nombre</h2>
+          <h3 class="apellidoPodio">Apellido</h3>
+          <p class="tiempoPodio">10min</p>
+        </div>
       </div>
-    </div>
-
-    <!-- 3º más tiempo acumulado -->
-    <div class="usuarioPodio" id="usuarioTercero">
-      <div class="contenedorAvatarPodio">
-        <img class="avatarPodio" src="./img/user.png" alt="imagen usuario">
+  
+      <!-- Parrilla -->
+      <div class="usuarioParrilla">
+        <div class="contenedorAvatarParrilla">
+          <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosParrilla">
+          <h2 class="nombreParrilla">Nombre</h2>
+          <h3 class="apellidoParrilla">Apellido</h3>
+         <p class="tiempoParrilla">5min</p>
+        </div>
       </div>
-      <div class="contenedorDatosPodio">
-        <h2 class="nombrePodio">Nombre</h2>
-        <h3 class="apellidoPodio">Apellido</h3>
-        <p class="tiempoPodio">10min</p>
+  
+      <div class="usuarioParrilla">
+        <div class="contenedorAvatarParrilla">
+          <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosParrilla">
+          <h2 class="nombreParrilla">Nombre</h2>
+          <h3 class="apellidoParrilla">Apellido</h3>
+         <p class="tiempoParrilla">5min</p>
+        </div>
       </div>
-    </div>
-
-  </div>
-
-  <div class="contenedorParrilla">
-    <div class="usuarioParrilla">
-      <div class="contenedorAvatarParrilla">
-        <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
+  
+      <div class="usuarioParrilla">
+        <div class="contenedorAvatarParrilla">
+          <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosParrilla">
+          <h2 class="nombreParrilla">Nombre</h2>
+          <h3 class="apellidoParrilla">Apellido</h3>
+         <p class="tiempoParrilla">5min</p>
+        </div>
       </div>
-      <div class="contenedorDatosParrilla">
-        <h2 class="nombreParrilla">Nombre</h2>
-        <h3 class="apellidoParrilla">Apellido</h3>
-       <p class="tiempoParrilla">5min</p>
+  
+      <div class="usuarioParrilla">
+        <div class="contenedorAvatarParrilla">
+          <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosParrilla">
+          <h2 class="nombreParrilla">Nombre</h2>
+          <h3 class="apellidoParrilla">Apellido</h3>
+         <p class="tiempoParrilla">5min</p>
+        </div>
       </div>
-    </div>
+  
+      <div class="usuarioParrilla">
+        <div class="contenedorAvatarParrilla">
+          <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosParrilla">
+          <h2 class="nombreParrilla">Nombre</h2>
+          <h3 class="apellidoParrilla">Apellido</h3>
+         <p class="tiempoParrilla">5min</p>
+        </div>
+      </div>
+  
+      <div class="usuarioParrilla">
+        <div class="contenedorAvatarParrilla">
+          <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
+        </div>
+        <div class="contenedorDatosParrilla">
+          <h2 class="nombreParrilla">Nombre</h2>
+          <h3 class="apellidoParrilla">Apellido</h3>
+         <p class="tiempoParrilla">5min</p>
+        </div>
+      </div>
 
-    <div class="usuarioParrilla">
-      <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
-      <h2 class="nombreParrilla">Nombre</h2>
-      <h3 class="apellidoParrilla">Apellido</h3>
-      <p class="tiempoParrilla">5min</p>
     </div>
-
-    <div class="usuarioParrilla">
-      <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
-      <h2 class="nombreParrilla">Nombre</h2>
-      <h3 class="apellidoParrilla">Apellido</h3>
-      <p class="tiempoParrilla">5min</p>
-    </div>
-
-    <div class="usuarioParrilla">
-      <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
-      <h2 class="nombreParrilla">Nombre</h2>
-      <h3 class="apellidoParrilla">Apellido</h3>
-      <p class="tiempoParrilla">5min</p>
-    </div>
-
-    <div class="usuarioParrilla">
-      <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
-      <h2 class="nombreParrilla">Nombre</h2>
-      <h3 class="apellidoParrilla">Apellido</h3>
-      <p class="tiempoParrilla">5min</p>
-    </div>
-
-    <div class="usuarioParrilla">
-      <img class="avatarParrilla" src="./img/user.png" alt="imagen usuario">
-      <h2 class="nombreParrilla">Nombre</h2>
-      <h3 class="apellidoParrilla">Apellido</h3>
-      <p class="tiempoParrilla">5min</p>
-    </div>
-  </div>
+  
 </body>
 </html>
