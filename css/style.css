@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600;800&display=swap'); 
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+html, body{
+	width: 100%;
+  height: 100%;
+ 
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  color: #1B7CAF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+body.contenedorGeneral {
+  /* background-color: #f9f9f9; */
+  padding: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow-y: scroll; */
+}
+
+.doscientos{
+  font-weight: 200;
+}
+
+.seiscientos {
+  font-weight: 600;
+}
+
+.contenedorGrid {
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: repeat(6, minmax(100px, 150px));
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/* --- Formulario --- */
+.contenedorFormulario {
+  border-radius: 15px;
+  background-color: #fff;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  
+
+  /* Hace que ocupe el ancho total de la rejilla superior */
+  grid-column: span 6;
+  
+  /* Rejilla interna del formulario */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr repeat(3, 120px);
+}
+
+.tituloAlumno, .tituloTiempo {
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+.tituloAlumno {
+  grid-column: 1 / 2;
+}
+
+.tituloTiempo {
+  grid-column: 2 / 5;
+}
+
+.campoAlumno, .campoMinutos {
+  border: 2px solid #BDDCF2;
+  border-radius: 5px;
+}
+
+.campoAlumno {
+  padding: 5px 10px;
+  font-family: 'Kanit', sans-serif;
+  color: #1B7CAF;
+  font-size: 16px;
+}
+
+
+
+/* Formulario avanzado */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid #BDDCF2;
+  -webkit-text-fill-color: #1B7CAF;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+::placeholder{
+  font-family: 'Kanit', sans-serif;
+  color: #1B7CAF;
+  font-size: 16px;
+}
+
+.campoMinutos {
+  text-align: center;
+  height: auto;
+}
+
+.campoMinutos:hover {
+  background-color: #BDDCF2;
+  color: #fff;
+} 
+
+/* --- Botones --- */
+[type="radio"] {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+[type="radio"]:checked ~ label {
+  background-color: #BDDCF2;
+  color: #fff;
+  border-radius: 0px;
+} 
+
+label {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.guardar{
+  margin: 0 auto;
+  grid-column: 1 / 5;
+  width: 100%;
+}
+
+.botonGuardar {
+  color: #1B7CAF;
+  background-color: #ecf2f7;
+  padding: 8px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Kanit', sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+.botonGuardar:hover{
+  color: #fff;
+  background-color: #BDDCF2;
+
+}
+
+
+
+
+
+
+
+/* --- Podio --- */
+.usuarioPodio{
+  background-color: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  text-align: center;
+  min-height: 200px;
+  height: auto;
+  grid-column: span 2 ;
+}
+
+.contenedorAvatarPodio {
+  background-color: #fff;
+  height: 80px;
+  border-radius: 15px 15px 0 0;
+}
+
+.userIcon {
+  font-size: 4rem;
+  background-color: #C1C9D1;
+  padding: 1.6rem;
+  border-radius: 50%;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* .avatarPodio {
+  width: 50%;
+  position: relative;
+  top: 25px;
+} */
+
+.contenedorDatosPodio {
+  padding: 65px 0 25px 0;
+  /* margin-top: -50px; */
+  background: #BDDCF2;
+  /* background: linear-gradient(0deg, rgba(189,220,242,1) 0%, rgba(27,124,175,1) 100%); */
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+}
+
+.nombrePodio {
+  font-size: 2rem;
+}
+
+.apellidoPodio {
+  font-size: 1.5rem;
+}
+
+.tiempoPodio {
+  font-size: 1.3rem;
+  margin-top: 18px;
+}
+
+/* --- Parrilla --- */
+.usuarioParrilla {
+  background-color: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 50px;
+  grid-column: span 3 ;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+}
+
+.contenedorAvatarParrilla{
+  width: 30%;
+  height: 100%;
+  background: #BDDCF2;
+/*   background: linear-gradient(-90deg, rgba(189,220,242,1) 0%, rgba(27,124,175,1) 100%);
+ */
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarParrilla {
+  height: 40px;
+}
+
+.contenedorDatosParrilla {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nombreParrilla, .apellidoParrilla, .tiempoParrilla {
+  font-size: 1.15rem;
+}
+
+.nombreParrilla {
+  font-weight: 600;
+}
+
+.apellidoParrilla {
+  padding-left: 10px;
+}
+
+.tiempoParrilla {
+  padding-left: 18px;  
+}
+
+
+
+/* --- Media Queries --- */
+@media (max-width: 800px) {
+  
+  /* --- Formulario --- */
+  .contenedorFormulario {
+    grid-column: span 2;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7px;
+  }
+
+  .tituloAlumno, .tituloTiempo {
+    display: none;
+    grid-column: 1/2;
+  }
+  
+  .campoAlumno {
+    grid-column: 1/4;
+  }
+  
+  .campoMinutos {
+    grid-column: span 1 ;
+  }
+
+  .guardar{
+    grid-column: 1 / 4;
+  }
+
+  /* --- Podio & parilla --- */
+  .contenedorGrid {
+    grid-template-columns: repeat(2, 230px);
+    grid-gap: 18px;
+  }
+
+  #usuarioPrimero {
+    grid-column: 1 / 3;
+  }
+
+  #usuarioSegundo {
+    grid-column: 1 / 2;
+  }
+  
+  #usuarioTercero {
+    grid-column: 2 / 3;
+  } 
+  
+  .usuarioParrilla{
+    grid-column: 1 / 3;
+  }
+
+}
