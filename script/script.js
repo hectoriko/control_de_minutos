@@ -2,7 +2,12 @@
 $(document).ready(() => {
   /* Mostar/ocultar usuarios parrilla */
   $('.siguientes').on('click', () => {
-    $('.usuarioParrilla').fadeToggle(800);
+    $('.parrillahidden').fadeToggle(800);
     $('.flecha').toggleClass('rotar');
-  });
+    /* --- Cambia el texto --- */
+    $('.textoACambiar').text($('.textoACambiar').text() == 'Ver siguientes' ? 'Ocultar siguientes' : 'Ver siguientes');
+
+  })
 })
+
+

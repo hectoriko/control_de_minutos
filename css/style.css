@@ -168,6 +168,8 @@ label {
   background-color: #bddcf2;
 }
 
+
+
 /* --- Podio --- */
 .usuarioPodio {
   background-color: #fff;
@@ -253,6 +255,17 @@ label {
 
 
 /* --- Parrilla --- */
+.parrillahidden{
+  display: none;
+  grid-column: span 6 ;
+} 
+
+.contenedorParrilla {  
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns: repeat(6, minmax(100px, 150px));
+}
+
 .usuarioParrilla {
   background-color: #fff;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
@@ -310,6 +323,10 @@ label {
 
 /* --- Media Queries --- */
 @media (max-width: 800px) {
+  .contenedorGrid {
+    padding: 5%;
+  }
+
   /* --- Formulario --- */
   .contenedorFormulario {
     grid-column: span 2;
@@ -351,6 +368,14 @@ label {
 
   #usuarioTercero {
     grid-column: 2 / 3;
+  }
+
+  .siguientes {
+    grid-column: span ;
+  }
+
+  .contenedorParrilla {  
+    grid-template-columns: repeat(2, 230px);
   }
 
   .usuarioParrilla {
