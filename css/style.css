@@ -21,12 +21,12 @@ html {
 }
 
 body.contenedorGeneral {
-  /* background-color: #f9f9f9; */
-  padding: 8%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  background-color: #e7eff0;
+  /* padding: 8%; */
+  display: flex;
   
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .doscientos {
@@ -43,8 +43,11 @@ body.contenedorGeneral {
   grid-template-columns: repeat(6, minmax(100px, 150px));
   border-radius: 10px;
 
-  margin: 0 auto;
+  margin: auto; 
+  padding: 3% 5% ;
 }
+
+
 
 /* --- Formulario --- */
 .contenedorFormulario {
@@ -221,6 +224,34 @@ label {
   margin-top: 18px;
 }
 
+
+
+/* --- Ver siguientes --- */
+.siguientes {
+  grid-column: span 6;
+  display: flex;
+  cursor: pointer;  
+}
+
+.siguientes h2, .flecha {
+  cursor: pointer;  
+}
+
+.siguientes h2 {
+  margin-right: 0.5rem;
+}
+
+.flecha {
+  margin-top: 1.5px;
+}
+
+.rotar{
+  transition: 0.8s;
+  transform: rotate(180deg);
+}
+
+
+
 /* --- Parrilla --- */
 .usuarioParrilla {
   background-color: #fff;
@@ -274,6 +305,8 @@ label {
 .tiempoParrilla {
   padding-left: 18px;
 }
+
+
 
 /* --- Media Queries --- */
 @media (max-width: 800px) {
