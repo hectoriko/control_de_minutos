@@ -22,10 +22,9 @@ html {
 
 body.contenedorGeneral {
   background-color: #e7eff0;
-  /* padding: 8%; */
   display: flex;
-  
-  /* justify-content: center;
+  /* padding: 8%; 
+  justify-content: center;
   align-items: center; */
 }
 
@@ -42,7 +41,6 @@ body.contenedorGeneral {
   grid-gap: 18px;
   grid-template-columns: repeat(6, minmax(100px, 150px));
   border-radius: 10px;
-
   margin: auto; 
   padding: 3% 5% ;
 }
@@ -62,50 +60,36 @@ body.contenedorGeneral {
   /* Rejilla interna del formulario */
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr repeat(3, 120px);
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center; */
+
 }
 
-.tituloAlumno,
-.tituloTiempo {
+.tituloTiempos {
+  grid-column: span 3;
   font-size: 1.4rem;
   margin: 0 auto;
 }
 
-.tituloAlumno {
-  grid-column: 1 / 2;
-}
-
-.tituloTiempo {
-  grid-column: 2 / 5;
-}
-
-.campoAlumno,
-.campoMinutos {
-  border: 2px solid #bddcf2;
-  border-radius: 5px;
+.alumno {
+  grid-column: span 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  
 }
 
 .campoAlumno {
-  padding: 5px 10px;
+  border: 2px solid #bddcf2;
+  border-radius: 5px;
+  padding: 5px 15px;
   font-family: "Kanit", sans-serif;
   color: #1b7caf;
   font-size: 16px;
-}
-
-/* Formulario avanzado */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: 2px solid #bddcf2;
-  -webkit-text-fill-color: #1b7caf;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-  transition: background-color 5000s ease-in-out 0s;
+  margin-top: 7px;
 }
 
 ::placeholder {
@@ -114,41 +98,9 @@ select:-webkit-autofill:focus {
   font-size: 16px;
 }
 
-.campoMinutos {
-  text-align: center;
-  height: auto;
-}
-
-.campoMinutos:hover {
-  background-color: #bddcf2;
-  color: #fff;
-}
-
-/* --- Botones --- */
-[type="radio"] {
-  z-index: -1;
-  position: absolute;
-  opacity: 0;
-}
-
-[type="radio"]:checked ~ label {
-  background-color: #bddcf2;
-  color: #fff;
-  border-radius: 0px;
-}
-
-label {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 5px;
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
-}
-
 .guardar {
+  grid-column: span 3;
   margin: 0 auto;
-  grid-column: 1 / 5;
   width: 100%;
 }
 
@@ -323,40 +275,40 @@ label {
 
 /* --- Media Queries --- */
 @media (max-width: 800px) {
+  
   .contenedorGrid {
-    padding: 5%;
+    grid-template-columns: repeat(2, 230px);
+    grid-gap: 18px;
   }
 
   /* --- Formulario --- */
   .contenedorFormulario {
     grid-column: span 2;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 7px;
   }
-
-  .tituloAlumno,
-  .tituloTiempo {
-    display: none;
+ 
+  .alumno {
     grid-column: 1/2;
   }
 
   .campoAlumno {
-    grid-column: 1/4;
+    grid-column: 1/2;
   }
-
-  .campoMinutos {
-    grid-column: span 1;
-  }
-
+  
   .guardar {
-    grid-column: 1 / 4;
+    grid-column: 1/2 ;
+  }
+
+  .tituloTiempos{
+    grid-column: span 2;
+  }
+
+  .alumno {
+    grid-column: span 2;
   }
 
   /* --- Podio & parilla --- */
-  .contenedorGrid {
-    grid-template-columns: repeat(2, 230px);
-    grid-gap: 18px;
-  }
 
   #tarjetaUsuarioPrimero {
     grid-column: 1 / 3;

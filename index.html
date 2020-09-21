@@ -16,12 +16,30 @@
     <!-- Formulario -->
     <div class="contenedorFormulario">
          
-      <div class="tituloAlumno seiscientos">Alumno</div>
-      <div class="tituloTiempo seiscientos">Tiempo</div>
-      
-      <!-- Primer alumno -->
-      <input class="campoAlumno" type="text" name="name" id="campoNombreUno" placeholder="Nombre" tabindex="1" required> 
-        <div class="campoMinutos doscientos"> 
+      <div class="tituloTiempos seiscientos">Añadir tiempos</div>
+      <div class="alumno">
+        <h4>15min</h4>
+        <input class="campoAlumno" type="text" name="name" id="campoNombreUno" placeholder="Nombre" tabindex="1" required> 
+      </div>
+      <div class="alumno">
+        <h4>10min</h4>
+        <input class="campoAlumno" type="text" name="name" id="campoNombreDos" placeholder="Nombre" tabindex="1" required> 
+      </div>
+      <div class="alumno">
+        <h4>5min</h4>
+        <select class="campoAlumno" id="campoNombreTres" required>
+          <option value="1">Alumno 1</option>
+          <option value="2">Alumno 2</option>
+          <option value="3">Alumno 3</option>
+        </select>
+        <!-- <input class="campoAlumno" type="text" name="name" id="campoNombreTres" placeholder="Nombre" tabindex="1" required>  -->
+      </div>
+      <div class="guardar">
+        <button class="botonGuardar seiscientos" id="botonGuardar">
+          Guardar
+        </button>
+      </div>
+       <!-- <div class="campoMinutos doscientos"> 
           <input type="radio" name="minutosUno" id="cincoMinUno" value="cincoMinUno">
           <label for="cincoMinUno"> <b class="seiscientos"> 5 </b> min </label> 
         </div>
@@ -34,48 +52,7 @@
         <div class="campoMinutos doscientos"> 
           <input type="radio" name="minutosUno" id="quiceMinUno" value="quiceMinUno"> 
           <label for="quiceMinUno"> <b class="seiscientos"> 15 </b> min </label> 
-        </div>
-
-      <!-- Segundo alumno -->
-      <input class="campoAlumno" type="text" name="name" id="campoNombreDos" placeholder="Nombre" tabindex="1" required> 
-        <div class="campoMinutos doscientos"> 
-          <input type="radio" name="minutosDos" id="cincoMinDos" value="cincoMinDos">
-          <label for="cincoMinDos"> <b class="seiscientos"> 5 </b> min </label> 
-        </div>
-
-        <div class="campoMinutos doscientos"> 
-          <input type="radio" name="minutosDos" id="diezMinDos" value="diezMinDos"> 
-          <label for="diezMinDos"> <b class="seiscientos"> 10 </b> min </label> 
-        </div>
-
-        <div class="campoMinutos doscientos"> 
-          <input type="radio" name="minutosDos" id="quinceMinDos" value="quinceMinDos"> 
-          <label for="quinceMinDos"> <b class="seiscientos"> 15 </b> min </label> 
-        </div>
-
-      <!-- Tercer alumno -->
-      <input class="campoAlumno" type="text" name="name" id="campoNombreTres" placeholder="Nombre" tabindex="1" required> 
-        <div class="campoMinutos doscientos"> 
-          <input type="radio" name="minutosTres" id="cincoMinTres" value="cincoMinTres">
-          <label for="cincoMinTres"> <b class="seiscientos"> 5 </b> min </label> 
-        </div>
-
-        <div class="campoMinutos doscientos"> 
-          <input type="radio" name="minutosTres" id="diezMinTres" value="diezMinTres"> 
-          <label for="diezMinTres"> <b class="seiscientos"> 10 </b> min </label> 
-        </div>
-
-        <div class="campoMinutos doscientos"> 
-          <input type="radio" name="minutosTres" id="quinceMinTres" value="quinceMinTres"> 
-          <label for="quinceMinTres"> <b class="seiscientos"> 15 </b> min </label> 
-        </div>
-
-      <div class="guardar">
-        <button class="botonGuardar seiscientos" id="botonGuardar">
-          Guardar
-        </button>
-      </div>
-            
+        </div> -->      
     </div>
 
     <!-- Podio -->
@@ -87,8 +64,8 @@
         </div>
         <div class="contenedorDatosPodio">
           <h2 class="nombrePodio seiscientos" id="nombreUsuarioPrimero">Nombre</h2>
-          <h3 class="apellidoPodio doscientos">Apellido</h3>
-          <p class="tiempoPodio doscientos" id="tiempoUsuarioPrimero"> <b class="seiscientos">0</b>min</p>
+          <!-- <h3 class="apellidoPodio doscientos">Apellido</h3> -->
+          <p class="tiempoPodio doscientos"> <b class="seiscientos" id="tiempoUsuarioPrimero">0</b>min</p>
         </div>
     </div>
       
@@ -100,8 +77,8 @@
         </div>
         <div class="contenedorDatosPodio">
           <h2 class="nombrePodio seiscientos" id="nombreUsuarioSegundo">Nombre</h2>
-          <h3 class="apellidoPodio doscientos">Apellido</h3>
-          <p class="tiempoPodio doscientos" id="tiempoUsuarioSegundo"> <b class="seiscientos">0</b>min</p>
+          <!-- <h3 class="apellidoPodio doscientos">Apellido</h3> -->
+          <p class="tiempoPodio doscientos"> <b class="seiscientos" id="tiempoUsuarioSegundo">0</b>min</p>
         </div>
     </div>
   
@@ -113,8 +90,8 @@
         </div>
         <div class="contenedorDatosPodio">
           <h2 class="nombrePodio seiscientos" id="nombreUsuarioTercero">Nombre</h2>
-          <h3 class="apellidoPodio doscientos">Apellido</h3>
-          <p class="tiempoPodio doscientos" id="tiempoUsuarioTercero"> <b class="seiscientos">0</b>min</p>
+          <!-- <h3 class="apellidoPodio doscientos">Apellido</h3> -->
+          <p class="tiempoPodio doscientos"> <b class="seiscientos" id="tiempoUsuarioTercero">0</b>min</p>
         </div>
     </div>
     
@@ -134,7 +111,7 @@
           </div>
           <div class="contenedorDatosParrilla">
             <h2 class="nombreParrilla seiscientos">Nombre</h2>
-            <h3 class="apellidoParrilla doscientos">Apellido</h3>
+            <!-- <h3 class="apellidoParrilla doscientos">Apellido</h3> -->
             <p class="tiempoParrilla doscientos"> <b class="seiscientos">0</b>min</p>
           </div>
         </div>
@@ -145,7 +122,7 @@
           </div>
           <div class="contenedorDatosParrilla">
             <h2 class="nombreParrilla seiscientos">Nombre</h2>
-            <h3 class="apellidoParrilla doscientos">Apellido</h3>
+            <!-- <h3 class="apellidoParrilla doscientos">Apellido</h3> -->
             <p class="tiempoParrilla doscientos"> <b class="seiscientos">0</b>min</p>
           </div>
         </div>
@@ -156,7 +133,7 @@
           </div>
           <div class="contenedorDatosParrilla">
             <h2 class="nombreParrilla seiscientos">Nombre</h2>
-            <h3 class="apellidoParrilla doscientos">Apellido</h3>
+            <!-- <h3 class="apellidoParrilla doscientos">Apellido</h3> -->
             <p class="tiempoParrilla doscientos"> <b class="seiscientos">0</b>min</p>
           </div>
         </div>
@@ -167,7 +144,7 @@
           </div>
           <div class="contenedorDatosParrilla">
             <h2 class="nombreParrilla seiscientos">Nombre</h2>
-            <h3 class="apellidoParrilla doscientos">Apellido</h3>
+            <!-- <h3 class="apellidoParrilla doscientos">Apellido</h3> -->
             <p class="tiempoParrilla doscientos"> <b class="seiscientos">0</b>min</p>
           </div>
         </div>
@@ -178,7 +155,7 @@
           </div>
           <div class="contenedorDatosParrilla">
             <h2 class="nombreParrilla seiscientos">Nombre</h2>
-            <h3 class="apellidoParrilla doscientos">Apellido</h3>
+            <!-- <h3 class="apellidoParrilla doscientos">Apellido</h3> -->
             <p class="tiempoParrilla doscientos"> <b class="seiscientos">0</b>min</p>
           </div>
         </div>
@@ -189,7 +166,7 @@
           </div>
           <div class="contenedorDatosParrilla">
             <h2 class="nombreParrilla seiscientos">Nombre</h2>
-            <h3 class="apellidoParrilla doscientos">Apellido</h3>
+            <!-- <h3 class="apellidoParrilla doscientos">Apellido</h3> -->
             <p class="tiempoParrilla doscientos"> <b class="seiscientos">0</b>min</p>
           </div>
         </div>
